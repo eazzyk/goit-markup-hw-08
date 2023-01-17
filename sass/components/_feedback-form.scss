@@ -10,9 +10,13 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  @media screen and (min-width: 768px) {
-    min-width: 520px;
+  @media screen and (min-width: 480px) {
+    min-width: auto;
     padding: 40px;
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 520px;
   }
 
   & .feedback__header {
@@ -22,7 +26,7 @@
     letter-spacing: 0.03em;
     color: var(--mainhead-color);
     margin-bottom: 12px;
-    margin-top: 38px;
+    margin-top: 0;
   }
 }
 
@@ -164,13 +168,17 @@
 }
 
 .feedback__policy--text {
-  margin-left: 30px;
+  margin-left: 25px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px var(--shadow-color);
   color: var(--maintext-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .feedback__policy--rules {
   color: var(--accent-color);
